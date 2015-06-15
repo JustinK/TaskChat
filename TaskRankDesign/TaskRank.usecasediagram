@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="2ab69c65-d98c-4f32-801e-0713e3a0f9e6" name="TaskRank" linkedPackageId="f2a1f521-5092-42c2-acfa-1310848774bf" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="53b52ae2-8b3a-4a76-b10d-eb29d5397487">
+      <elementDefinition Id="e8075dec-b4ee-47b4-980c-9aa8d0814e80" />
+      <body>- Create a session
+- View Trello tasks
+- Select tasks for discussion
+- Initiate voting
+- Archive the decision
+- Remove unwanted members</body>
+    </comment>
+    <comment Id="98052412-35fa-4bc8-a3e2-02f8a9d16701">
+      <elementDefinition Id="fd810c75-fb1a-4b3c-93f8-ec700796558c" />
+      <body>- Join a session
+- View the issue at hand
+- Participate in chat
+- Cast a vote</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="979291e8-8f16-489e-b1bc-5a7f1319cfdb">
+      <profileInstance Id="358ba6d8-8293-434f-bfff-f7bc6a09e7a8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="11dd69f5-8ec8-4c72-8a65-550856a0e920">
+      <profileInstance Id="34062bfa-1811-40ab-9f21-8fdfabe08730" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="c18eae15-91ea-42b2-9eff-64e6f04107ce" name="TaskRank" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="599b0df0-52a4-4936-ba7c-f1dbb2a4f603" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="026e190e-0c29-406a-a9fc-a10d3349a8d7" name="Team Leader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b4489c52-6305-460a-9b08-b3748f195d10" />
+        <targetEnds>
+          <association Id="a6990a25-39a9-490f-8db4-77edab13e32b" isDerived="false" sourceEndRoleName="Team Leader" targetEndRoleName="TaskRank" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="c18eae15-91ea-42b2-9eff-64e6f04107ce" LastKnownName="TaskRank" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="26b7f01d-e8c8-42c7-b61a-8db0376e7ad3" name="Team Leader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a1f984ce-6cca-4a97-ad8a-05bd5e35be38" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac07fe8a-f666-4705-899f-e9a2efc616e7" name="TaskRank" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c3cb6336-0909-4cc1-ab52-5f1869b11beb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b6858f3f-85a2-4eb4-a773-a698a339ef37" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1d43a14e-aa36-43c8-b83e-e067f2b8a9b9" name="Team Members" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4376133d-aa95-458e-b697-f288cf17e033" />
+        <targetEnds>
+          <association Id="5c4b2dd0-8c80-4bee-b912-c5175057ac6a" isDerived="false" sourceEndRoleName="Team Members" targetEndRoleName="TaskRank" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="c18eae15-91ea-42b2-9eff-64e6f04107ce" LastKnownName="TaskRank" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0db260a1-9f80-4616-bfd8-3e5c7cb82467" name="Team Members" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ff52e5dc-9290-4f82-8a2e-ce8b990bafa9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1a728e41-322a-4bb9-923d-ae029327aff0" name="TaskRank" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ffd38c4e-e545-4251-88f7-1f7e08f60fde" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="45c5334f-b3ff-4c93-b03f-1a4998729d7f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="f2a1f521-5092-42c2-acfa-1310848774bf" name="TaskRankDesign">
+    <elementDefinition Id="be5f8311-21b2-4a01-82a2-a554bf6b88bf" />
+  </package>
+</useCaseModelRoot>

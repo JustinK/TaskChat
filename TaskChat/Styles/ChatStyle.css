@@ -1,0 +1,180 @@
+﻿body
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+#header
+{
+    padding: 20px;
+    background-color: #0094ff;
+    border-bottom: gray solid 2px;
+    color: white;
+    font-size: 24px;
+}
+
+.submitButton
+{
+    background-color: #d7e5e4;
+    border: #5f9482 solid 1px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+    .submitButton:hover
+    {
+        background-color: #e1e1e1;
+    }
+
+.login
+{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: solid 2px #285e8e;
+    color: #1e4638;
+}
+
+    .login .textBox
+    {
+        width: 240px;
+    }
+
+
+    .login #divButton
+    {
+        padding: 4px;
+        text-align: right;
+    }
+
+.chatRoom
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px gray;
+}
+
+    .chatRoom .title
+    {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px;
+        background-color: #d7e5e4;
+        border-bottom: solid 1px #285e8e;
+    }
+
+    .chatRoom .content
+    {
+        height: 400px;
+        clear: both;
+    }
+
+        .chatRoom .content .chatWindow
+        {
+            float: left;
+            width: 70%;
+            height: 400px;
+            border-right: solid 1px #285e8e;
+            overflow-y: scroll;
+            word-wrap:break-word;
+        }
+
+            .chatRoom .content .chatWindow .message
+            {
+                padding-left: 8px;
+                padding-right: 4px;
+
+            }
+
+                .chatRoom .content .chatWindow .message .userName
+                {
+                    font-weight: bold;
+                }
+
+        .chatRoom .content .users
+        {
+            float: right;
+            width: 30%;
+            height: 300px;
+        }
+
+            .chatRoom .content .users .user
+            {
+                display: block;
+                cursor: pointer;
+                padding: 4px;
+                background-color: #f9f9f9;
+                border-bottom: solid 1px #285e8e;
+            }
+
+            .chatRoom .content .users .loginUser
+            {
+                display: block;
+                padding: 4px;
+                color: gray;
+                border-bottom: solid 1px #285e8e;
+            }
+
+            .chatRoom .content .users .user:hover
+            {
+                background-color: #e1e1e1;
+            }
+
+    .chatRoom .messageBar
+    {
+        border-top: solid 1px gray;
+        padding: 4px;
+    }
+
+        .chatRoom .messageBar .textbox
+        {
+            width: 550px;
+        }
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.navbar {
+    background-color: #3276b1;
+    border-color: #285e8e;
+    color:#fff;
+}
+.navbar-brand {
+    color:#fff;
+}
+.nav {
+    color:#fff;
+}
+
+.notificationBalloon {
+    padding: 6px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: none;
+}
+
+.dropzone {
+    background-color: lightgray;
+    height:250px !important;
+}
+
+.draggable {
+    cursor:move;
+}
+
+#cardListOutput{
+    height: 404px;
+    overflow-y: scroll;
+}
+#divContainer{
+    margin-top:75px;
+}

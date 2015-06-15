@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h1>@ViewBag.Session.Title</h1>
+<h2>Session ID: @ViewBag.Session.Id</h2>
+
+<div class="section" id="issue">
+    <div class="sectionTitle">Issues</div>
+    <div id="issueTitle">Title</div>
+    <div id="issueDescription">This is where a description of the issue would go.</div>
+    <div id="issueComments">This is where comments on the issue would go.</div>
+</div>
+
+<div class="section" id="chat">
+    <div id="chatText"></div>
+    <input id="chatMessage" type="text" placeholder="Enter a chat message here" />
+    <br />
+    <button id="btnSend" onclick="send()">Send</button>
+</div>
+
+<div class="section" id="users">
+    @foreach (var user in ViewBag.Session.Members)
+    {
+        <div class="user">
+            <div id="userName">@user.Name</div>
+        </div>
+    }
+</div>
+
+<script type="text/javascript">
+    function send() {
+        $('chatText').append(chatMessage.textContent);
+    }
+</script>

@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "TaskChat";
+}
+
+<h2>Welcome to TaskChat</h2>
+<p>TaskChat is an and easy way for your team to gather around important issues and make decisions.</p>
+<div class="section">
+    <form action="/home/create">
+        <div class="sectionTitle">Create a new session</div>
+        <div>Session Title</div>
+        <input type="text" placeholder="Enter Title" name="title" />
+        
+        <div>Name</div>
+        <input type="text" placeholder="Enter Name" name="name" />
+        <br />
+        <input type="submit" value="Create" />
+    </form>
+</div>
+
+<div class="section">
+    <form action="/home/join">
+        <div class="sectionTitle">Join a session</div>
+
+        <div>Name</div>
+        <input name="name" type="text" placeholder="Enter Name" />
+        
+        <div>Session Id</div>
+        <input name="id" type="text" placeholder="Enter Id" />
+        <br />
+        <input type="submit" value="Join" />
+    </form>
+</div>
+
+<script type="text/javascript">
+    function create() {
+        // Call server to create a session and get back an ID
+        $.ajax({
+            url: '/home/create',
+            type: 'POST',
+            data: {
+                Title: $('#title').val(),
+                TeamLead: $('#name').val()
+            },
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) { join(response) },
+            error: function () {
+                alert("error");
+            }
+        });
+    }
+
+    function joinBtn() {
+        join($('#sessionId'));
+    }
+    function join(sessionId) {
+        // Call the server, passing it the username and ID
+        $.get('/home/index/' + sessionId);
+    }
+</script>

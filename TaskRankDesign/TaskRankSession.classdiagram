@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="72075bba-2b5e-41ae-8812-c5f9ef1de60d" name="TaskRankSession" linkedPackageId="dddfe1c4-c7bb-4ff7-894f-ab694460ec61" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1594f6af-7d75-438d-97a8-12756886733c">
+      <profileInstance Id="e61ec0b3-09ab-4f44-84eb-8ff08b5672ce" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="aaad191d-4721-403b-8500-86389bc248ee">
+      <profileInstance Id="53d46dd9-f2e6-4fab-b014-168b434bddad" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="11ebd64a-dbbb-4984-b0c2-400730f21b71" name="Session" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e1468bb1-7cad-47f2-8a7c-7e93d634c34d" />
+        <targetEnds>
+          <association Id="54e834e2-6c65-4c6f-b1a1-5425e2b34803" isDerived="false" sourceEndRoleName="Session" targetEndRoleName="Member" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ef3ff2bd-a970-4463-a680-7ebce27606e6" LastKnownName="Member" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="67eb2590-1ed3-4dea-8d7c-e11546b7cebf" name="Session" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ae1c9180-7147-4c3c-9148-9f9622495db5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f34fe545-d66b-4d0c-ad30-479a6a7ac5e3" name="Member" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="dc3b35e0-7a04-4a66-ba24-ea4831caf2e9" name="Lower" value="1">
+                      <elementDefinition Id="7986c4b8-f119-4973-bd42-bfa17f6b1da5" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="5ee965de-2402-453a-b493-e43e2bf30ae5" name="Upper" value=".*">
+                      <elementDefinition Id="63fe6507-a906-4b8d-88df-38cb45e26017" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0129bf86-472b-4373-a884-b9d80bdaf5cb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="994c43e4-c6e5-48c4-8f4a-e8afd3392e13" />
+          </association>
+          <association Id="009eee95-531f-42d6-9681-533f2d6cd9fd" isDerived="false" sourceEndRoleName="Session" targetEndRoleName="Task" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b41b32a0-01b2-4e41-a79c-6682db8bdc72" LastKnownName="Task" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b11efafe-94b8-40a0-947f-f48ab5a9f325" name="Session" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c31d5e54-1cd3-408d-8e73-6e356090634e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="319555fe-acf8-41f8-999d-8816c6405daa" name="Task" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="5d8d587a-a4a1-493e-b2b8-286754581a8d" name="Lower" value="1">
+                      <elementDefinition Id="3bf517fa-23a7-4048-8794-17e7941ee78a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d68b6996-1c11-4090-ac32-798ecf99cf01" name="Upper" value=".*">
+                      <elementDefinition Id="823ca639-3ae3-4f49-87e4-a55de5af5774" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5d756049-9a82-46b2-b0fa-2922e0ff4664" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e4950ff4-793c-4ad3-b969-114277fe36e3" />
+          </association>
+          <association Id="f7b993a3-1109-4936-ac64-36ed00209811" isDerived="false" sourceEndRoleName="Session" targetEndRoleName="TaskFactory" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2fe2d288-c145-4c5d-b737-5a961f7d2048" LastKnownName="TaskFactory" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dc9b84a4-1052-4ac5-ba93-dfeaf81fcbe7" name="Session" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fcaa66a5-59d6-4a0e-b22b-42fe4be6990c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f184e116-b99f-4588-aaf1-8d0e237051fb" name="TaskFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="570f8656-5944-44b0-a534-9d0e1be62813" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aff42150-5947-418c-bab7-913b4e893c97" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9bb231a7-e89f-4c98-83d9-d7f2b5d4ee64" name="Members" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ed4d0817-491e-49e5-b981-d366686762f6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="14126f02-931e-4b85-b69f-e7bcbb845736" LastKnownName="List&lt;Member&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="28d65c3e-9e05-4c44-9cc9-e0b0402d6ffe" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1bd28f90-add9-436f-ab31-0984bed5c84e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="98e7a07b-9a6b-4e76-9a6f-f6933222f3a5" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="bb8a977e-bd11-46bd-a235-898210b7755b" name="Tasks" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8b86de5d-849a-4a4f-b48e-4f57b7007d0a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="407d03b1-b347-4592-9b1a-295d735da7f8" LastKnownName="List&lt;Task&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="4122c714-1ac8-4516-8639-06867efac377" name="TeamLead" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2b154e21-9ee2-4fdd-b2b6-00659007ed6f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d8329674-6946-42fb-9dd8-3dfb53cd60ae" LastKnownName="Member" />
+            </type_NamedElement>
+          </property>
+          <property Id="986a4dc5-c725-413c-b670-419e835fa3ff" name="CurrentTask" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0d0d3070-8d48-47ed-9131-77216c2d4ea9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="be90cb93-080d-4f0e-b6cd-4cb916256451" LastKnownName="Task" />
+            </type_NamedElement>
+          </property>
+          <property Id="b29dba59-2203-4b2d-b548-19a5ac1798d7" name="Conversation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6c6287d6-7800-4b9d-b098-97db6fc97c34" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7d290d94-b754-45f2-9116-b668ff946f08" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="e24a88dc-4281-474a-b88a-cc0c97a6de35" name="AvailableValues" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3a1223a2-1505-4b4b-b1a7-6a363faf1556" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="232fa219-230d-49f8-a327-9f29a82ec0c0" LastKnownName="List&lt;object&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b41b32a0-01b2-4e41-a79c-6682db8bdc72" name="Task" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e4795abf-b0dd-4785-895a-801531836fe9" />
+        <ownedAttributesInternal>
+          <property Id="56e0a5e8-9ecf-4d89-aaf6-68699ef7a364" name="Title" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bb71afc9-6473-4070-8dfb-bd0e4f578baa" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7d290d94-b754-45f2-9116-b668ff946f08" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="07e95120-f489-43e6-bff8-395a94eb849f" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0ce69d48-f0a4-4774-bacb-858d2b56117c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7d290d94-b754-45f2-9116-b668ff946f08" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="9b831f22-989c-4bfd-b725-5a00cd1ccde0" name="Value" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="560b65df-6afe-4a7b-83e6-60cecb42baf2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="76119c4d-acdc-4a1c-9be3-a5f9189247bc" LastKnownName="object (result of the vote)" />
+            </type_NamedElement>
+          </property>
+          <property Id="ad855d1f-fd7a-4acd-a13a-9b6bcdccb22c" name="ConversationArchive" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="06010bf1-d10c-4fc6-92e9-6b8dce01ab74" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7d290d94-b754-45f2-9116-b668ff946f08" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="cc07f982-32b7-4b7a-823f-cba3cb4f5c8c" name="ValueStatistics (things that could be interesting, like deviation)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c8fb3779-f608-4707-9d64-37745be1dde8" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6f07ce36-a78a-45ac-a967-9e675cf53378" name="Save" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eb371782-64ec-4726-8344-a96bdb409182" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ef3ff2bd-a970-4463-a680-7ebce27606e6" name="Member" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2eb7f635-3532-4c08-b02c-e6c1a0384114" />
+        <ownedAttributesInternal>
+          <property Id="ec08d015-a535-4204-9da8-d913ac9aa5b3" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5d1c7137-c789-4742-944f-cf7116d951ca" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7d290d94-b754-45f2-9116-b668ff946f08" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="4a2e5705-7bc0-4b40-aece-e79c34a985d9" name="Value" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ad18675e-9363-4c12-a451-6d1910dae903" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="46c13acc-f54f-43b9-a9d7-674e7bb1891c" LastKnownName="object (their vote)" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="14126f02-931e-4b85-b69f-e7bcbb845736" name="List&lt;Member&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Member&gt;">
+        <elementDefinition Id="cafbe406-9b5c-46fc-9f41-d80437bbeb6e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d8329674-6946-42fb-9dd8-3dfb53cd60ae" name="Member" isAbstract="false" isLeaf="false" cachedFullName="TaskRankDesign::Member">
+        <elementDefinition Id="2eb7f635-3532-4c08-b02c-e6c1a0384114" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="407d03b1-b347-4592-9b1a-295d735da7f8" name="List&lt;Task&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Task&gt;">
+        <elementDefinition Id="2b66abb1-8a5c-49f1-af8d-3fbf9ba89d40" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="98e7a07b-9a6b-4e76-9a6f-f6933222f3a5" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="aee16b1d-e2c7-4189-81e4-ee20a1cea6e7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="be90cb93-080d-4f0e-b6cd-4cb916256451" name="Task" isAbstract="false" isLeaf="false" cachedFullName="TaskRankDesign::Task">
+        <elementDefinition Id="e4795abf-b0dd-4785-895a-801531836fe9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7d290d94-b754-45f2-9116-b668ff946f08" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="376428ce-80eb-4149-8c39-351ff6e9f5b3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="46c13acc-f54f-43b9-a9d7-674e7bb1891c" name="object (their vote)" isAbstract="false" isLeaf="false" cachedFullName="object (their vote)">
+        <elementDefinition Id="8010c182-73a3-46c0-abb2-d83ccfcc8654" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="76119c4d-acdc-4a1c-9be3-a5f9189247bc" name="object (result of the vote)" isAbstract="false" isLeaf="false" cachedFullName="object (result of the vote)">
+        <elementDefinition Id="fed226ed-3e15-4019-871e-ef007fff7530" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="232fa219-230d-49f8-a327-9f29a82ec0c0" name="List&lt;object&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;object&gt;">
+        <elementDefinition Id="f77b38af-fe4f-4eb3-8c83-d0c7be60fcf5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f690d249-e782-47da-84f7-939a6a29fdf0" name="Jira Task" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="240e462e-1283-420f-bc83-59f090ef880f" />
+        <generalsInternal>
+          <generalization Id="05b2e616-8b26-4624-ae3e-d829bfa8480e" isSubstitutable="false">
+            <classMoniker Id="b41b32a0-01b2-4e41-a79c-6682db8bdc72" LastKnownName="Task" />
+            <elementDefinition Id="08b1250f-d97f-43b4-8738-035446fc9e1a" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="93a833ed-3f70-4567-baf0-af9d589bf7d1" name="Trello Task" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="65ce8b35-1730-4ff5-9692-66abe9382d5d" />
+        <generalsInternal>
+          <generalization Id="eed6765f-b0bb-4207-b25b-e18bef26c0f3" isSubstitutable="false">
+            <classMoniker Id="b41b32a0-01b2-4e41-a79c-6682db8bdc72" LastKnownName="Task" />
+            <elementDefinition Id="87e2cc2c-bd8b-41eb-85d3-e00c36f503ec" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2fe2d288-c145-4c5d-b737-5a961f7d2048" name="TaskFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f289d7ce-fb59-4b2c-8265-a6b888d49705" />
+        <targetEnds>
+          <association Id="8a0fce16-c03b-4eaf-88b5-1ad8503c018e" isDerived="false" sourceEndRoleName="TaskFactory" targetEndRoleName="Jira Task" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f690d249-e782-47da-84f7-939a6a29fdf0" LastKnownName="Jira Task" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f4152f60-78b4-41c2-a2c1-14975dab89b8" name="TaskFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ea567226-d7cc-441e-ad1a-45c0de3c23c0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a4e81ef-af35-4a13-8935-fab125aa8a27" name="Jira Task" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="388fbd09-5570-4b8a-86e7-2c8dfa8384ea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d30e8718-e87c-4857-965e-4ce709339111" />
+          </association>
+          <association Id="c680f5dc-20e7-4fa3-bbea-c7c95231bee0" isDerived="false" sourceEndRoleName="TaskFactory" targetEndRoleName="Trello Task" isLeaf="false" isAbstract="false">
+            <classMoniker Id="93a833ed-3f70-4567-baf0-af9d589bf7d1" LastKnownName="Trello Task" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f529a75-fb8d-4e53-8315-2faba2f1f4d5" name="TaskFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="58b6fca5-43a0-4551-8b1b-7477b04f8493" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc42de15-3748-4d66-90b9-76287de28b1a" name="Trello Task" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2403cdd7-c0a1-40b7-9c4e-dee3f085fa7b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1d57459b-2648-42f9-ae1f-6a55625e576d" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="0caaa9e3-7d3e-493e-9353-167d7c0dbfbd" name="NewTask" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2a748faf-5259-4a99-93aa-287aa16c7555" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d3a4fd07-5bb7-4eeb-acfb-61f5711debea" name="string json" direction="In" isUnique="false">
+                  <elementDefinition Id="2af2f576-b652-4f2a-b0c0-7d2f507c34a4" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="dddfe1c4-c7bb-4ff7-894f-ab694460ec61" name="TaskRankDesign">
+    <elementDefinition Id="be5f8311-21b2-4a01-82a2-a554bf6b88bf" />
+  </package>
+</logicalClassDesignerModel>
